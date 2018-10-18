@@ -1,0 +1,41 @@
+doctype
+html(lang="en")
+    head
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(href="main.css" rel="stylesheet")
+        link(href="signup.css" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Montserrat:700,900|Oswald:500,700" rel="stylesheet")
+        link(href='font-awesome-4.7.0/css/font-awesome.min.css', rel='stylesheet')
+    body
+        .SignupScreenForms
+            h1 SIGN UP
+            h3 Signup to The Social Project
+            i.fa.fa-chevron-left.back(aria-hidden="true")
+            .Parts
+                form
+                    .FirstPart
+                        input(type="text" placeholder="First Name")
+                        p.Error Please Enter Your First Name
+                        br
+                        input(type="text" placeholder="Last Name (Optional)")
+                        br
+                        input(type="text" placeholder="Email Address")
+                        p.Error Please Enter Your Email Address
+                        br
+                    .SecondPart
+                        input(type="text" placeholder="Username")
+                        p.Error Please Enter A Username
+                        br
+                    .FinalPart
+                        h3.WelcomeMsg Hi First Last!
+                        p Your username will be Username. 
+                        p This cannot be changed but your first and last name can be. 
+                        p If you want to change it do so now, if not click the SIGN UP! button to continue!
+                    button.FinishedBtn(type="submit") SIGN UP!
+                p.Next Next 
+                i.NextPointer.fa.fa-chevron-right(aria-hidden="true")
+                p.Back Back 
+                i.BackPointer.fa.fa-chevron-left(aria-hidden="true")
+    footer
+        script(src='Jquery3.1.1/jquery-3.1.1.min.js', rel='script')
+        script(src='main.js', rel='script')

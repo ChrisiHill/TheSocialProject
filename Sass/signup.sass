@@ -1,0 +1,122 @@
+$Y: #ffcc00
+$DG: #333
+html
+    background-image: url("Images/signupbg.jpg")
+    height: 100%
+    align-items: center
+    justify-content: center
+    display: flex
+    text-align: center
+.SignupScreenForms
+    overflow: hidden
+    position: relative
+    i.back
+        font-size: 24px
+        position: absolute
+        top: 10px
+        left: 10px
+        transition: all 100ms ease-in-out
+        &:hover
+            cursor: pointer
+            transform: scale(1.2)
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 400px
+    height: 450px
+    border: 5px solid $DG
+        radius: 5px
+    background-color: $Y
+    h1
+        top: 10px
+        position: absolute
+    h3
+        margin-right: 150px
+        text-align: left
+
+    .FirstPart,
+    .SecondPart,
+    .FinalPart
+        p
+            margin: 5px 0 -10px 0
+            line-height: auto
+        .Error
+            line-height: 0em
+            display: nonde
+            color: red
+            font-weight: 700
+        width: 400px
+        display: inline-block
+        input
+            font-size: 14px
+            font-family: 'Oswald'
+            width: calc(100% - 50px)
+            margin: 10px 0
+            padding: 5px
+    i.NextPointer 
+        transition: all 100ms ease-in-out
+        pointer-events: none
+        position: absolute
+        bottom: 18px
+        right: 23px
+        font-size: 20px
+    p.Next
+        line-height: 20px
+        color: $DG
+        padding-right: 30px
+        font-family: 'Oswald'
+        font-weight: 700
+        font-size: 20px
+        position: absolute
+        bottom: 0px
+        right: 10px
+        &:hover
+            cursor: pointer
+        &:hover ~ i.NextPointer
+            transform: translate(5px)
+    i.BackPointer 
+        transition: all 100ms ease-in-out
+        pointer-events: none
+        position: absolute
+        bottom: 18px
+        left: 23px
+        font-size: 20px
+    p.Back
+        line-height: 20px
+        color: $DG
+        padding-left: 30px
+        font-family: 'Oswald'
+        font-weight: 700
+        font-size: 20px
+        position: absolute
+        bottom: 0px
+        left: 10px
+        &:hover
+            cursor: pointer
+        &:hover ~ i.BackPointer 
+            transform: translate(-5px)
+    .Parts 
+        width: 1208px
+        margin-left: 808px
+    .FinishedBtn
+        border: none
+        background-color: rgba(white, 0)
+        line-height: 20px
+        color: $DG
+        font-family: 'Oswald'
+        font-weight: 700
+        font-size: 20px
+        position: absolute
+        bottom: 15px
+        right: 15px
+        &:hover
+            cursor: pointer
+        &:hover ~ i.NextPointer
+            transform: translate(5px)
+        display: none
+    .FinalPart
+        top: -900px
+        h3.WelcomeMsg
+            margin-right: 0
+            text-align: center

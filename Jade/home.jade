@@ -1,0 +1,226 @@
+doctype
+html(lang="en")
+    head
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(href="main.css" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Montserrat:700,900|Oswald:500,700" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet")
+        link(href='font-awesome-4.7.0/css/font-awesome.min.css', rel='stylesheet')
+    body
+        .nav
+            ul
+                li.home.HideSearch.activenav
+                    i.fa.fa-home(aria-hidden= "true")
+                    p Home
+                    p.NumNot 34
+                li.Notifications.HideSearch
+                    i.fa.fa-bell(aria-hidden= "true")
+                    p Notifications
+                    p.NumNot 99+
+                li.Messages.HideSearch
+                    i.fa.fa-comments(aria-hidden= "true")
+                    p Messages
+                    p.NumNot 5
+                li.Search
+                    .overlay
+                    p.SearchText Search
+                    i.fa.fa-search.SearchBtn(aria-hidden= "true")
+                    form.SearchForm
+                        input(type="text" name="Search" placeholder="Search")
+                        button(type="submit" name="submit")
+                li.User.HideSearch
+                    img(src="Accounts/Avatars/ChrisHillprofileimg1.jpg")
+                    i.fa.fa-cog.Gear(aria-hidden= "true")
+                    .overlay
+                    ul
+                        p Hi Chris!
+                        br
+                        p View Profile
+                        br
+                        p Settings
+                        hr
+                        p Help
+                        br
+                        p Logout
+                        br
+        .BG.HideSearch
+        .Main.HideSearch
+            .Feed
+                .PostNew
+                    ul 
+                        li.Status.PostSel.active
+                            i.fa.fa-bars(aria-hidden= "true")
+                            p Status
+                        li.Photo.PostSel
+                            i.fa.fa-picture-o(aria-hidden= "true")
+                            p Photo
+                        li.Video.PostSel
+                            i.fa.fa-video-camera(aria-hidden= "true")
+                            p Video
+                        li.Audio.PostSel
+                            i.fa.fa-volume-up(aria-hidden= "true")
+                            p Audio
+                    .PostBody
+                        .Status
+                            h3 What's up?
+                            img(src="Accounts/Avatars/ChrisHillprofileimg1.jpg")
+                            form
+                                textarea.autoExpand(placeholder="What's up Chris?")
+                                button(type="submit") Post
+                        .Photo
+                            h3 Comming Soon!
+                        .Video
+                            h3 Comming Soon!
+                        .Audio
+                            h3 Comming Soon!
+                .FeedBody
+                    .NewPost
+                        h3 Click Here to View 1 New Post
+                    .Post
+                        i.fa.fa-chevron-down.PostDropdown(aria-hidden= "true")
+                        img(src="Accounts/Avatars/ChrisHillprofileimg1.jpg")
+                        h3.Name Chris Hill
+                        p.Handle @ChrisHill
+                        br
+                        p.Time 
+                            i 3 mins ago
+                        .Status
+                            p.Post hi
+                        .Buttons
+                            i.fa.fa-comment(aria-hidden= "true")
+                            p.CommentNo 64
+                            i.fa.fa-thumbs-up(aria-hidden= "true")
+                            p.LikeNo 4k
+                            i.fa.fa-share-square(aria-hidden= "true")
+                            p.ShareNo 1k
+                    hr
+                    .Post
+                        i.fa.fa-chevron-down.PostDropdown(aria-hidden= "true")
+                        img(src="Accounts/Avatars/ChrisHillprofileimg1.jpg")
+                        h3.Name Chris Hill
+                        p.Handle @ChrisHill
+                        br
+                        p.Time 
+                            i 3 mins ago
+                        .Status
+                            p.Post sdfeak any hen?nd spelt a veryut what if I was just typing a normal sentance, would it break any hen?nd spelt a very uts just typing a normal sentance, would it break any hen?nd spelt a veryut what if I was just typing a normal sentance, would it break any hen?nd spelt a very uts just typing a normal sentance, would it brkljsdflksin ggfjdflk jsflk klsfjlksd jlskdjf lskdfj slkdf slkdfj slkdf jslkdfj lskdf jsdlk jlskdjf lskdfj slkdf slkdfj slkdf jslkdfj lskdf jsdl jlskdjf lskdfj slkdf slkdfj slkdf jslkdfj lskdf jsdl jlskdjf lskdfj slkdf slkdfj slkdf jslkdfj lskdf jsdl
+                            p.Post sdfeak any hen?nd spelt a veryut what if I was just typing a normal sentance, would it break any hen?nd spelt a very uts just typing a normal sentance, would it break any hen?nd spelt a veryut what if I was just typing a normal sentance, would it break any hen?nd spelt a very uts just typing a normal sentance, would it brkljsdflksin ggfjdflk jsflk klsfjlksd jlskdjf lskdfj slkdf slkdfj slkdf jslkdfj lskdf jsdlk jlskdjf lskdfj slkdf slkdfj slkdf jslkdfj lskdf jsdl jlskdjf lskdfj slkdf slkdfj slkdf jslkdfj lskdf jsdl jlskdjf lskdfj slkdf slkdfj slkdf jslkdfj lskdf jsdl
+                        .Buttons
+                            i.fa.fa-comment(aria-hidden= "true")
+                            p.CommentNo 64
+                            i.fa.fa-thumbs-up(aria-hidden= "true")
+                            p.LikeNo 4k
+                            i.fa.fa-share-square(aria-hidden= "true")
+                            p.ShareNo 1k
+                        .PostComments
+                            .PostAComment
+                                img(src="Accounts/Avatars/ChrisHillprofileimg1.jpg")
+                                form
+                                    textarea.autoExpand(placeholder="Post A Comment..." maxlength="400")
+                                    button(type="submit") Post
+                            .Comment
+                                img(src="Accounts/Avatars/Default.jpg")
+                                h3.Name Random Guest
+                                p.Handle @ChrisHill
+                                br
+                                p.Time 
+                                    i 2 mins ago
+                                p.Post sdfkljsdflksjdflk jsflk klsfjlksd jlskdjf lskdfj slkdf slkdfj slkdf jslkdfj lskdf jsdlk jlskdjf lskdfj slkdf slkdfj slkdf jslkdfj lskdf jsdl jlskdjf lskdfj slkdf slkdfj slkdf jslkdfj lskdf jsdl jlskdjf lskdfj slkdf slkdfj slkdf jslkdfj lskdf jsdl
+                                .CommentButtons
+                                    i.fa.fa-thumbs-up(aria-hidden= "true")
+                                    p.LikeNo 4k
+                    hr
+                    .Post
+                        i.fa.fa-chevron-down.PostDropdown(aria-hidden= "true")
+                        img(src="Accounts/Avatars/ChrisHillprofileimg1.jpg")
+                        h3.Name Chris Hill
+                        p.Handle @ChrisHill
+                        br
+                        p.Time 
+                            i 3 mins ago
+                        .ReadMore
+                            p Read More
+                        .Status
+                            p.Post sdfeak any hen?nd spelt a veryut what if I was just typing a normal sentance, would it break any hen?nd spelt a very uts just typing a normal sentance, would it break any hen?nd spelt a veryut what if I was just typing a normal sentance, would it break any hen?nd spelt a very uts just typing a normal sentance, would it brkljsdflksin ggfjdflk jsflk klsfjlksd jlskdjf lskdfj slkdf slkdfj slkdf jslkdfj lskdf jsdlk jlskdjf lskdfj slkdf slkdfj slkdf jslkdfj lskdf jsdl jlskdjf lskdfj slkdf slkdfj slkdf jslkdfj lskdf jsdl jlskdjf lskdfj slkdf slkdfj slkdf jslkdfj lskdf jsdl
+                            p.Post sdfeak any hen?nd spelt a veryut what if I was just typing a normal sentance, would it break any hen?nd spelt a very uts just typing a normal sentance, would it break any hen?nd spelt a veryut what if I was just typing a normal sentance, would it break any hen?nd spelt a very uts just typing a normal sentance, would it brkljsdflksin ggfjdflk jsflk klsfjlksd jlskdjf lskdfj slkdf slkdfj slkdf jslkdfj lskdf jsdlk jlskdjf lskdfj slkdf slkdfj slkdf jslkdfj lskdf jsdl jlskdjf lskdfj slkdf slkdfj slkdf jslkdfj lskdf jsdl jlskdjf lskdfj slkdf slkdfj slkdf jslkdfj lskdf jsdl
+                        .Buttons
+                            i.fa.fa-comment(aria-hidden= "true")
+                            p.CommentNo 64
+                            i.fa.fa-thumbs-up(aria-hidden= "true")
+                            p.LikeNo 4k
+                            i.fa.fa-share-square(aria-hidden= "true")
+                            p.ShareNo 1k
+                        .PostComments
+                            .PostAComment
+                                img(src="Accounts/Avatars/ChrisHillprofileimg1.jpg")
+                                form
+                                    textarea.autoExpand(placeholder="Post A Comment..." maxlength="400")
+                                    button(type="submit") Post
+                            .Comment
+                                img(src="Accounts/Avatars/Default.jpg")
+                                h3.Name Random Guest
+                                p.Handle @ChrisHill
+                                br
+                                p.Time 
+                                    i 2 mins ago
+                                p.Post sdfkljsdflksjdflk jsflk klsfjlksd jlskdjf lskdfj slkdf slkdfj slkdf jslkdfj lskdf jsdlk jlskdjf lskdfj slkdf slkdfj slkdf jslkdfj lskdf jsdl jlskdjf lskdfj slkdf slkdfj slkdf jslkdfj lskdf jsdl jlskdjf lskdfj slkdf slkdfj slkdf jslkdfj lskdf jsdl
+                                .CommentButtons
+                                    i.fa.fa-thumbs-up(aria-hidden= "true")
+                                    p.LikeNo 4k
+            .SideBar
+                .SideContent
+                    .SuggestedGroups
+                        h3 Suggested Groups
+                        .Suggestion
+                            h3.Name Flamingo Club
+                            img(src="Images/Groups/Icons/Gorpicon1.jpg")
+                            p.Handle @FlamingoClub
+                            p.Desc We R The Flamingoss
+                            .GroupStats
+                                i.fa.fa-users(aria-hidden= "true")
+                                p.UserCount 1.2k
+                                i.fa.fa-thumbs-up(aria-hidden= "true")
+                                p.LikeCount 4k
+                            p.VisitGroup Visit
+                        hr
+                        .Suggestion
+                            h3.Name if the title is really long then it will look like blaa blaa blaa
+                            img(src="Images/Groups/Icons/Gorpicon1.jpg")
+                            p.Handle @aaaaaaaaaaaaaaaaaaaa
+                            p.Desc this is a reallllllyyyyyyyyyy long description, so long that it hits the 150 character limit aaaaaa.
+                            .GroupStats
+                                i.fa.fa-users(aria-hidden= "true")
+                                p.UserCount 1.2k
+                                i.fa.fa-thumbs-up(aria-hidden= "true")
+                                p.LikeCount 4k
+                            p.VisitGroup Visit
+                        hr
+                    .SuggestedBlogs
+                        h3 Suggested Blogs
+                        .Suggestion
+                            h3.Name This blog is the best blog ever
+                            img(src="Images/Groups/Icons/Gorpicon1.jpg")
+                            p.Handle @bestblog
+                            p.Desc laa dee daaaa
+                            .GroupStats
+                                i.fa.fa-users(aria-hidden= "true")
+                                p.UserCount 1.2k
+                                i.fa.fa-thumbs-up(aria-hidden= "true")
+                                p.LikeCount 4k
+                            p.VisitGroup Visit
+                        hr
+                        .Suggestion
+                            h3.Name ddddddddddjjjjjjjjjjjjjjjjjjj in da houze
+                            img(src="Images/Groups/Icons/Gorpicon1.jpg")
+                            p.Handle @dj
+                            p.Desc this is a reallllllyyyyyyyyyy long description, so long that it hits the 150 character limit aaaaaa.
+                            .GroupStats
+                                i.fa.fa-users(aria-hidden= "true")
+                                p.UserCount 1.2k
+                                i.fa.fa-thumbs-up(aria-hidden= "true")
+                                p.LikeCount 4k
+                            p.VisitGroup Visit
+    footer
+        script(src='Jquery3.1.1/jquery-3.1.1.min.js', rel='script')
+        script(src="https://rawgit.com/jackmoore/autosize/master/dist/autosize.min.js", rel='script')
+        script(src='main.js', rel='script')

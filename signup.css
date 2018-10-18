@@ -1,0 +1,162 @@
+html {
+  background-image: url("Images/signupbg.jpg");
+  height: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center; }
+
+.SignupScreenForms {
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 400px;
+  height: 450px;
+  border: 5px solid #333;
+    border-radius: 5px;
+  background-color: #ffcc00; }
+  .SignupScreenForms i.back {
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    -webkit-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out; }
+    .SignupScreenForms i.back:hover {
+      cursor: pointer;
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2); }
+  .SignupScreenForms h1 {
+    top: 10px;
+    position: absolute; }
+  .SignupScreenForms h3 {
+    margin-right: 150px;
+    text-align: left; }
+  .SignupScreenForms .FirstPart,
+  .SignupScreenForms .SecondPart,
+  .SignupScreenForms .FinalPart {
+    width: 400px;
+    display: inline-block; }
+    .SignupScreenForms .FirstPart p,
+    .SignupScreenForms .SecondPart p,
+    .SignupScreenForms .FinalPart p {
+      margin: 5px 0 -10px 0;
+      line-height: auto; }
+    .SignupScreenForms .FirstPart .Error,
+    .SignupScreenForms .SecondPart .Error,
+    .SignupScreenForms .FinalPart .Error {
+      line-height: 0em;
+      display: nonde;
+      color: red;
+      font-weight: 700; }
+    .SignupScreenForms .FirstPart input,
+    .SignupScreenForms .SecondPart input,
+    .SignupScreenForms .FinalPart input {
+      font-size: 14px;
+      font-family: 'Oswald';
+      width: calc(100% - 50px);
+      margin: 10px 0;
+      padding: 5px; }
+  .SignupScreenForms i.NextPointer {
+    -webkit-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+    pointer-events: none;
+    position: absolute;
+    bottom: 18px;
+    right: 23px;
+    font-size: 20px; }
+  .SignupScreenForms p.Next {
+    line-height: 20px;
+    color: #333;
+    padding-right: 30px;
+    font-family: 'Oswald';
+    font-weight: 700;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0px;
+    right: 10px; }
+    .SignupScreenForms p.Next:hover {
+      cursor: pointer; }
+    .SignupScreenForms p.Next:hover ~ i.NextPointer {
+      -webkit-transform: translate(5px);
+      -ms-transform: translate(5px);
+      transform: translate(5px); }
+  .SignupScreenForms i.BackPointer {
+    -webkit-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+    pointer-events: none;
+    position: absolute;
+    bottom: 18px;
+    left: 23px;
+    font-size: 20px; }
+  .SignupScreenForms p.Back {
+    line-height: 20px;
+    color: #333;
+    padding-left: 30px;
+    font-family: 'Oswald';
+    font-weight: 700;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0px;
+    left: 10px; }
+    .SignupScreenForms p.Back:hover {
+      cursor: pointer; }
+    .SignupScreenForms p.Back:hover ~ i.BackPointer {
+      -webkit-transform: translate(-5px);
+      -ms-transform: translate(-5px);
+      transform: translate(-5px); }
+  .SignupScreenForms .Parts {
+    width: 1208px;
+    margin-left: 808px; }
+  .SignupScreenForms .FinishedBtn {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    line-height: 20px;
+    color: #333;
+    font-family: 'Oswald';
+    font-weight: 700;
+    font-size: 20px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: none; }
+    .SignupScreenForms .FinishedBtn:hover {
+      cursor: pointer; }
+    .SignupScreenForms .FinishedBtn:hover ~ i.NextPointer {
+      -webkit-transform: translate(5px);
+      -ms-transform: translate(5px);
+      transform: translate(5px); }
+  .SignupScreenForms .FinalPart {
+    top: -900px; }
+    .SignupScreenForms .FinalPart h3.WelcomeMsg {
+      margin-right: 0;
+      text-align: center; }

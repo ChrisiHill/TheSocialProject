@@ -1,0 +1,141 @@
+doctype
+html(lang="en")
+    head
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(href="main.css" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Montserrat:700,900|Oswald:500,700" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet")
+        link(href='font-awesome-4.7.0/css/font-awesome.min.css', rel='stylesheet')
+    body
+        .nav
+            ul
+                li.home.HideSearch.activenav
+                    i.fa.fa-home(aria-hidden= "true")
+                    p Home
+                    p.NumNot 34
+                li.Notifications.HideSearch
+                    i.fa.fa-bell(aria-hidden= "true")
+                    p Notifications
+                    p.NumNot 99+
+                li.Messages.HideSearch
+                    i.fa.fa-comments(aria-hidden= "true")
+                    p Messages
+                    p.NumNot 5
+                li.Search
+                    .overlay
+                    p.SearchText Search
+                    i.fa.fa-search.SearchBtn(aria-hidden= "true")
+                    form.SearchForm
+                        input(type="text" name="Search" placeholder="Search")
+                        button(type="submit" name="submit")
+                li.User.HideSearch
+                    img(src="Accounts/Avatars/ChrisHillprofileimg1.jpg")
+                    i.fa.fa-cog.Gear(aria-hidden= "true")
+                    .overlay
+                    ul
+                        p Hi Chris!
+                        br
+                        p View Profile
+                        br
+                        p Settings
+                        hr
+                        p Help
+                        br
+                        p Logout
+                        br
+        .BG.HideSearch
+        .Main.HideSearch
+            .Settings
+                .SettingsMenu
+                    ul
+                        li.General
+                            p General
+                        li.Notifications
+                            p Notifications
+                        li.SecurityandPrivacy
+                            p Security yand Privacy
+                        li.DeleteAccount
+                            p Delete Account
+                .SettingsBody
+                    form.General
+                        h1 General Settings
+                            .Newinput
+                                h3 First Name:
+                                input(type="text" placeholder="First Name")
+                            .Newinput
+                                h3 First Name:
+                                input(type="text" placeholder="Last Name (Optional)")
+                            .Newinput
+                                h3 Username:
+                                input(class="nonclickable" type="text" value="@sf")
+                            .Newinput.ProfileImg
+                                img(src="Accounts/Avatars/ChrisHillprofileimg1.jpg")
+                                input(type="file")
+                        button(type="submit") Save
+                    hr
+                    form.Notifications
+                        h1 Notifications Settings
+                            .Newinput
+                                h3 First Name:
+                                input(type="text" placeholder="First Name")
+                            .Newinput
+                                h3 First Name:
+                                input(type="text" placeholder="Last Name (Optional)")
+                        button(type="submit") Save
+            .SideBar
+                .SideContent
+                    .SuggestedGroups
+                        h3 Suggested Groups
+                        .Suggestion
+                            h3.Name Flamingo Club
+                            img(src="Images/Groups/Icons/Gorpicon1.jpg")
+                            p.Handle @FlamingoClub
+                            p.Desc We R The Flamingoss
+                            .GroupStats
+                                i.fa.fa-users(aria-hidden= "true")
+                                p.UserCount 1.2k
+                                i.fa.fa-thumbs-up(aria-hidden= "true")
+                                p.LikeCount 4k
+                            p.VisitGroup Visit
+                        hr
+                        .Suggestion
+                            h3.Name if the title is really long then it will look like blaa blaa blaa
+                            img(src="Images/Groups/Icons/Gorpicon1.jpg")
+                            p.Handle @aaaaaaaaaaaaaaaaaaaa
+                            p.Desc this is a reallllllyyyyyyyyyy long description, so long that it hits the 150 character limit aaaaaa.
+                            .GroupStats
+                                i.fa.fa-users(aria-hidden= "true")
+                                p.UserCount 1.2k
+                                i.fa.fa-thumbs-up(aria-hidden= "true")
+                                p.LikeCount 4k
+                            p.VisitGroup Visit
+                        hr
+                    .SuggestedBlogs
+                        h3 Suggested Blogs
+                        .Suggestion
+                            h3.Name This blog is the best blog ever
+                            img(src="Images/Groups/Icons/Gorpicon1.jpg")
+                            p.Handle @bestblog
+                            p.Desc laa dee daaaa
+                            .GroupStats
+                                i.fa.fa-users(aria-hidden= "true")
+                                p.UserCount 1.2k
+                                i.fa.fa-thumbs-up(aria-hidden= "true")
+                                p.LikeCount 4k
+                            p.VisitGroup Visit
+                        hr
+                        .Suggestion
+                            h3.Name ddddddddddjjjjjjjjjjjjjjjjjjj in da houze
+                            img(src="Images/Groups/Icons/Gorpicon1.jpg")
+                            p.Handle @dj
+                            p.Desc this is a reallllllyyyyyyyyyy long description, so long that it hits the 150 character limit aaaaaa.
+                            .GroupStats
+                                i.fa.fa-users(aria-hidden= "true")
+                                p.UserCount 1.2k
+                                i.fa.fa-thumbs-up(aria-hidden= "true")
+                                p.LikeCount 4k
+                            p.VisitGroup Visit
+    footer
+        script(src='Jquery3.1.1/jquery-3.1.1.min.js', rel='script')
+        script(src="https://rawgit.com/jackmoore/autosize/master/dist/autosize.min.js", rel='script')
+        script(src='main.js', rel='script')

@@ -1,0 +1,76 @@
+doctype
+html(lang="en")
+    head
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(href="main.css" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Montserrat:700,900|Oswald:500,700" rel="stylesheet")
+        link(href='font-awesome-4.7.0/css/font-awesome.min.css', rel='stylesheet')
+    body
+        .MainContent
+            .Greeting
+                .Welcome
+                    h1 WELCOME TO THE SOCIAL PROJECT!
+                    h3 Stay up to date with what's happening in the world!
+                .Search
+                        form.Search
+                            i.fa.fa-search(aria-hidden="true")
+                            input(type="text" placeholder="Search The Social Project")
+                            button.Signupbtn(type="submit") Search
+                .Stats
+                    .Users 
+                        h3 Total Users Signed Up
+                        p 1,212
+                    .Groups
+                        h3 Total Groups Created
+                        p 112
+                    .Messages 
+                        h3 Total Messages Sent
+                        p 13,212
+                .Forms
+                    .LoginDesk
+                        h2 LOGIN
+                        input(type="text" placeholder="Username or Email Address")
+                        input(type="password" placeholder="Password")
+                        button.Loginbtn(type="submit") LOGIN
+                    .SIGNUPDesk
+                        h2 SIGN UP
+                        form.SignupFormStat
+                            input(type="text" placeholder="First Name")
+                            input(type="text" placeholder="Last Name")
+                            input(type="text" placeholder="Email Address")
+                            button.Signupbtn(type="submit") SIGN UP
+        .GreetingMobile
+            .Welcome
+                h1 WELCOME TO
+                h1 THE SOCIAL PROJECT!
+                h3 Stay up to date with what's happening in the world!
+            .Btns
+                p.SignUp SIGN UP!
+                p.Login LOGIN!
+        .PopupSign
+            .LoginScreen
+                .Close
+                    i.fa.fa-times.fa-2x(aria-hidden="true")
+                form.LoginForm
+                    h1 Login
+                    input(type="text" placeholder="Username or Email Address")
+                    input(type="password" placeholder="Password")
+                    br
+                    button(type="submit") Login
+                p.Error Username Or Password is Incorrect.
+                p.NoAccount Don't have an Account?
+                p.ForgotPW Forgot Password?
+            .SignupScreen
+                .Close
+                    i.fa.fa-times.fa-2x(aria-hidden="true")
+                form.SignupForm
+                    h1 Sign Up
+                    input(type="text" placeholder="First Name")
+                    input(type="text" placeholder="Last Name")
+                    input(type="text" placeholder="Email Address")
+                    br
+                    button(type="submit") Sign Up
+                p.Account Have an Account?
+    footer
+        script(src='Jquery3.1.1/jquery-3.1.1.min.js', rel='script')
+        script(src='main.js', rel='script')
